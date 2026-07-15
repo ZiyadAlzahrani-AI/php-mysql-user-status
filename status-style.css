@@ -1,0 +1,144 @@
+/* General page style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f8fafc);
+  color: #1f2937;
+}
+
+h2 {
+  text-align: center;
+  color: #1d4ed8;
+}
+
+/* Form style */
+.user-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 850px;
+  margin: 0 auto 35px;
+  padding: 22px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.user-form label {
+  font-weight: bold;
+}
+
+.user-form input[type="text"],
+.user-form input[type="number"] {
+  width: 180px;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+}
+
+.user-form input[type="text"]:focus,
+.user-form input[type="number"]:focus {
+  border-color: #2563eb;
+}
+
+/* Submit button style */
+.user-form input[type="submit"] {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 7px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-form input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+/* Table style */
+.users-table {
+  width: 90%;
+  max-width: 850px;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.users-table th,
+.users-table td {
+  padding: 13px;
+  border: 1px solid #dbeafe;
+  text-align: center;
+}
+
+.users-table th {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.users-table tr:hover {
+  background-color: #dbeafe;
+}
+
+/* Status style */
+.status-on,
+.status-off {
+  display: inline-block;
+  min-width: 38px;
+  padding: 6px 10px;
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.status-on {
+  background-color: #16a34a;
+}
+
+.status-off {
+  background-color: #dc2626;
+}
+
+/* Toggle button style */
+.toggle-button {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 6px;
+  background-color: #7c3aed;
+  color: white;
+  text-decoration: none;
+}
+
+.toggle-button:hover {
+  background-color: #6d28d9;
+}
+
+/* Mobile screen style */
+@media (max-width: 700px) {
+  .user-form {
+    flex-direction: column;
+  }
+
+  .user-form input[type="text"],
+  .user-form input[type="number"],
+  .user-form input[type="submit"] {
+    width: 100%;
+  }
+
+  .users-table {
+    width: 100%;
+  }
+}
